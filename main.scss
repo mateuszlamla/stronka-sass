@@ -34,6 +34,16 @@
     }
     &__element{
         padding: 1em ;
+        text-align: center;
+    }
+    &__link{
+        text-decoration: none;
+        color: #fff;
+        transition: 0.5s ease;
+        &:hover{
+            color: #aaa;
+            transition: 0.5s ease;
+        }
     }
 }
 
@@ -54,11 +64,14 @@ main{
     flex-direction: column;
     align-items: center;
     border-radius: 10px 10px 0 0;
+    padding: 0 0 2.5em 0;
+    -webkit-box-shadow: 15px 20px 20px -20px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 15px 20px 20px -20px rgba(66, 68, 90, 1);
+    box-shadow: 15px 20px 20px -20px rgba(66, 68, 90, 1);
 
     &__img{
        width: 100%; 
-       border-radius: 10px 10px 0 0;
-       
+       border-radius: 10px 10px 0 0;       
     }
 
     &__subtitle{
@@ -84,9 +97,38 @@ main{
         padding: 0.5em;
         background-color: transparent;
         border-radius: 10px;
-        color: #aaa;
-        margin: 0 0 3em 0;
+        color: #aaa;    
+        border: 1px solid #aaa;
+        cursor: pointer;
+        transition: 0.5s ease;
+        &:hover{
+            border: 1px solid #444;
+            color: #444;
+        }
     }
+    
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://picsum.photos/id/249/1920/620");
+    background-position-y: 200px;
+    color: #fff;
+    
+    &__content{
+        padding: 3em 0 1em 0;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    &__line{
+        width: 300px;
+        color: #fff;
+    }
+    &__autor{
+        padding: 1em 0 1.5em 0;
+    }  
 }
 
 
